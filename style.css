@@ -1,0 +1,323 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.603);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;    padding: 15px;
+    color: black ;
+    display: flex;
+    position: fixed;
+    border-radius: 20px;
+    justify-content: space-between;
+    width: 98%;
+}
+
+.nav-content {
+    display: flex;
+    padding-top:10px;
+}
+
+.nav-content a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-content a:hover {
+    background-color:white;
+    color: gray;
+}
+
+.logo img {
+    
+    max-height: 50px; /* Adjust the height of your logo */
+}
+
+.toothspy{
+    background-image: url("img/bg-main.jpg.jpg");
+    margin: 0;
+    padding: 200px;    
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+    
+}
+.toothspy-v {
+    padding: 20px;
+    text-align: justify;
+    width: 300px;
+    height: 300px;
+    background-color: #15f81d86;
+    border-radius: 30px;
+    
+  
+}
+
+.about-content{
+    text-align: justify;
+    width: 400px;
+    height: 100px;
+    padding: 20px;
+    
+    
+}
+
+.more{
+    background-color: rgb(48, 186, 48);
+    text-decoration: none;
+    padding: 5px;
+    border: solid black 1px;
+    border-radius: 5px;
+    
+}
+
+
+.toothspy a:hover{
+    color: white;
+}
+.about-content p{
+    background-color: rgba(27, 145, 27, 0.479);
+    color: black;
+    padding: 20px;
+    border-radius: 30px;
+}
+.about{
+    
+        background-image: url('img/bg-1.jpg');
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat;
+        padding: 50px;
+    }
+
+    .about {
+        text-align: center; 
+        padding: 20px; 
+    }
+    
+    .about-content {
+        display: inline-block   ;
+        text-align: center  ; 
+        margin-bottom: 10px;
+    }
+
+    /* Services */
+
+    
+.services h1
+{
+        padding: 10px;
+        margin: 30px;
+        font-weight:bold;
+
+}
+.services{
+    align-items: center;
+    text-align: center;
+}
+.services-content-img img{
+    background-color: rgba(153, 255, 0, 0.719);
+    border-radius: 100%;
+    width: 100px;
+    
+    
+
+    
+}
+
+.services-content{
+    display: flex;
+    
+}
+.services-content-img{
+    border: solid black 3px;
+    width: 300px;
+    align-items: center;
+    text-align: center  ;
+    height: 150px;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+/* Services End */
+/* Contact starts */
+.contact h1
+{
+        padding: 10px;
+        margin: 30px;
+        font-weight:bold;
+        text-align:center ;
+
+}
+
+.contact {
+    
+    
+        background-image: url('img/bg-2.jpg');
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat;
+        padding: 50px;
+    
+
+}
+
+.contact form{
+    background-color:rgba(255, 255, 255, 0.667) ;
+    width: 100%;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+.contact button{
+    margin: 10px;
+    margin-top: 20px;
+    width: 200px;
+    height: 40px;
+    border-radius: 10%;
+}
+
+.contact {
+    
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    
+   padding: 30px;
+    max-width: 400px;
+    flex-direction: column;
+}
+
+h4 {
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.footer a{
+    width: 15px;
+    height: 15px;
+}
+
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+  }
+  nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+     color: #052744;
+    font-size: 18px;
+    transition: 0.2s ease;
+  }
+  nav .mainMenu li a:hover {
+  color: rgb(0, 11, 85);
+  }
+  nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+  }
+  nav .mainMenu .closeMenu,
+  .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+  }
+  .fa-facebook:hover {
+    color: rgb(0, 110, 255);
+  }
+  .fa-twitter:hover {
+    color: rgb(86, 154, 243);
+  }
+  .fa-instagram:hover {
+    color: rgb(255, 0, 191);
+  }
+  .fa-github:hover {
+    color: rgb(255, 123, 0);
+  }
+  nav .logo {
+    margin: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  @media (max-width: 800px) {
+    nav .mainMenu {
+      height: 60vh;
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      left: 0px;
+      z-index: 10;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: rgb(128, 84, 205);
+      transition: top 1s ease 0s;
+      display: none;
+    }
+    nav .mainMenu .closeMenu {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    nav .openMenu {
+      display: block;
+    }
+    nav .mainMenu li a:hover {
+      background: none;
+      color: rgb(255, 123, 0);
+    }
+    .icons i {
+      display: inline-block;
+      padding: 12px;
+    }
+  }
+  
