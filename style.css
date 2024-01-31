@@ -14,6 +14,13 @@ body {
     justify-content: space-between;
     width: 98%;
 }
+@media (max-width: 768px) {
+    .navbar {
+        max-width: 90%;
+        
+        position: static; /* Remove fixed positioning on smaller screens */
+    }
+}
 
 .nav-content {
     display: flex;
@@ -36,26 +43,57 @@ body {
     max-height: 50px; /* Adjust the height of your logo */
 }
 
-.toothspy{
+
+.toothspy {
     background-image: url("img/bg-main.jpg.jpg");
     margin: 0;
     padding: 200px;    
     background-size: cover;
     background-repeat: no-repeat;
-    
-    
-    
 }
+
 .toothspy-v {
-    padding: 20px;
+    padding: 5%; /* Adjust as needed */
     text-align: justify;
-    width: 300px;
-    height: 300px;
+    width: 100%; /* Make it responsive */
+    max-width: 400px; /* Set a maximum width if necessary */
+    height: auto; /* Automatically adjust height based on content */
     background-color: #15f81d86;
     border-radius: 30px;
-    
-  
+    margin: 0 auto; /* Center the element horizontally */
 }
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .toothspy-v {
+        width: 80%; /* Adjust as needed for smaller screens */
+        max-width: none; /* Remove maximum width on smaller screens */
+    }
+}
+.toothspy {
+    background-image: url("img/bg-main.jpg.jpg");
+    margin: 0;
+    padding: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Media Query for responsive design */
+@media (max-width: 768px) {
+    .toothspy {
+        background-color: aqua;
+
+        padding: 0; 
+        height: 400px;
+    background-image: none;
+left: 0;    }
+}
+@media (max-width: 768px) {
+    .toothspy  p{
+        margin-top: 10px;
+    }
+}
+
 
 .about-content{
     text-align: justify;
@@ -66,15 +104,36 @@ body {
     
 }
 
-.more{
+
+.toothspy a{
     background-color: rgb(48, 186, 48);
     text-decoration: none;
     padding: 5px;
     border: solid black 1px;
     border-radius: 5px;
+    font-size: 20px;
+    padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+    
+    
     
 }
 
+.toothspy a:hover {background-color: #3e8e41}
+
+.toothspy a:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
 
 .toothspy a:hover{
     color: white;
@@ -84,6 +143,16 @@ body {
     color: black;
     padding: 20px;
     border-radius: 30px;
+}
+@media (max-width: 768px) {
+    .about-content p {
+        margin: 0; /* Remove any default margin */
+        border-radius: 30px;
+        gap: 7px;
+        bottom: 0;
+        left: 0;
+        width: 80%;
+    }
 }
 .about{
     
@@ -133,6 +202,14 @@ body {
     display: flex;
     
 }
+
+@media (max-width: 768px) {
+    .services-content {
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+    }
+}
 .services-content-img{
     border: solid black 3px;
     width: 300px;
@@ -141,6 +218,19 @@ body {
     height: 150px;
     border-radius: 15px;
     margin-left: 20px;
+}
+.services1{
+    margin-top: 5px;
+    display: flex;
+    
+}
+
+@media (max-width: 768px) {
+    .services1 {
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+    }
 }
 /* Services End */
 /* Contact starts */
@@ -165,12 +255,22 @@ body {
 
 }
 
+
 .contact form{
     background-color:rgba(255, 255, 255, 0.667) ;
     width: 100%;
     border-radius: 10px;
     display: inline-block;
     text-align: center;
+}
+@media (max-width: 768px) {
+    .contact form {
+        background-color:rgba(255, 255, 255, 0.667) ;
+    width: auto;
+    border-radius: 10px;
+    
+    text-align: center;
+    }
 }
 
 .contact button{
@@ -226,6 +326,8 @@ button:hover {
     background-color: #45a049;
 }
 
+/* Contact Ends */
+/* footer Starts */
 
 .footer {
     background-color: #333;
@@ -241,6 +343,8 @@ button:hover {
     width: 15px;
     height: 15px;
 }
+
+/* footer ends */
 
 nav .mainMenu {
     display: flex;
